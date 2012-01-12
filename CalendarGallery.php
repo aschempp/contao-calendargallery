@@ -28,25 +28,55 @@
  * @version    $Id$
  */
 
-class CalendarGallery extends ContentGallery
+if(is_dir(TL_ROOT . '/system/modules/metagallery'))
 {
-	public function __construct($objTemplate) 
-	{
-		// Default values (not available in calendar gallery)
-		$this->useHomeDir = false;
-		$this->perPage = 0;
-		$this->id = $objTemplate->id;
-		$this->type = 'calendar_gallery';
-		
-		// Apply calendar gallery settings
-		$arrHeadline = deserialize($objTemplate->gal_headline);
-		$this->headline = is_array($arrHeadline) ? $arrHeadline['value'] : $arrHeadline;
-		$this->hl = is_array($arrHeadline) ? $arrHeadline['unit'] : 'h1';
-		$this->multiSRC = $objTemplate->multiSRC;
-		$this->sortBy = $objTemplate->sortBy;
-		$this->perRow = $objTemplate->perRow;
-		$this->imagemargin = $objTemplate->gal_imagemargin;
-		$this->size = $objTemplate->gal_size;
-		$this->fullsize = $objTemplate->gal_fullsize;
-	}
+    class CalendarGallery extends ContentMetaGallery
+    {
+        public function __construct($objTemplate)
+        {
+            // Default values (not available in calendar gallery)
+            $this->useHomeDir = false;
+            $this->perPage = 0;
+            $this->id = $objTemplate->id;
+            $this->type = 'calendar_gallery';
+
+            // Apply calendar gallery settings
+            $arrHeadline = deserialize($objTemplate->gal_headline);
+            $this->headline = is_array($arrHeadline) ? $arrHeadline['value'] : $arrHeadline;
+            $this->hl = is_array($arrHeadline) ? $arrHeadline['unit'] : 'h1';
+            $this->multiSRC = $objTemplate->multiSRC;
+            $this->sortBy = $objTemplate->sortBy;
+            $this->perRow = $objTemplate->perRow;
+            $this->imagemargin = $objTemplate->gal_imagemargin;
+            $this->size = $objTemplate->gal_size;
+            $this->fullsize = $objTemplate->gal_fullsize;
+            $this->meta_txt = $objTemplate->meta_txt;
+        }
+    }
+}
+else
+{
+    class CalendarGallery extends ContentGallery
+    {
+        public function __construct($objTemplate)
+        {
+            // Default values (not available in calendar gallery)
+            $this->useHomeDir = false;
+            $this->perPage = 0;
+            $this->id = $objTemplate->id;
+            $this->type = 'calendar_gallery';
+
+            // Apply calendar gallery settings
+            $arrHeadline = deserialize($objTemplate->gal_headline);
+            $this->headline = is_array($arrHeadline) ? $arrHeadline['value'] : $arrHeadline;
+            $this->hl = is_array($arrHeadline) ? $arrHeadline['unit'] : 'h1';
+            $this->multiSRC = $objTemplate->multiSRC;
+            $this->sortBy = $objTemplate->sortBy;
+            $this->perRow = $objTemplate->perRow;
+            $this->imagemargin = $objTemplate->gal_imagemargin;
+            $this->size = $objTemplate->gal_size;
+            $this->fullsize = $objTemplate->gal_fullsize;
+            $this->meta_txt = $objTemplate->meta_txt;
+        }
+    }
 }
