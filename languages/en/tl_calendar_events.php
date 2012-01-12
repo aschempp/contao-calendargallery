@@ -31,27 +31,27 @@
 /**
  * Fields
  */
-$GLOBALS['TL_LANG']['tl_calendar_events']['addGallery']			= array('Add an image gallery', 'If you choose this option, an image gallery will be added to the event.');
-$GLOBALS['TL_LANG']['tl_calendar_events']['gal_headline']		= array('Gallery headline', 'If you enter a headline, it will be shown on top of the gallery.');
-$GLOBALS['TL_LANG']['tl_calendar_events']['multiSRC']			= array('Source files', 'Please select one or more files or folders (files in a folder will be included automatically).');
-$GLOBALS['TL_LANG']['tl_calendar_events']['sortBy']				= array('Order by', 'Please select a sort order.');
-$GLOBALS['TL_LANG']['tl_calendar_events']['perRow']				= array('Thumbnails per row', 'Please enter the number of thumbnails per row.');
-$GLOBALS['TL_LANG']['tl_calendar_events']['gal_size']			= array('Image width and height', 'Please enter either the image width, the image height or both measures to resize the image. If you leave both fields blank, the original image size will be displayed.');
-$GLOBALS['TL_LANG']['tl_calendar_events']['gal_fullsize']		= array('Fullsize view', 'If you choose this option, the images can be viewed fullsize by clicking it.');
-$GLOBALS['TL_LANG']['tl_calendar_events']['gal_imagemargin']	= array('Image margin', 'Please enter the top, right, bottom and left margin and the unit. Image margin is the space inbetween an image and its neighbour elements.');
-
+$GLOBALS['TL_LANG']['tl_calendar_events']['addGallery']         = array('Add an image gallery', 'If you choose this option, an image gallery will be added to the event.');
+$GLOBALS['TL_LANG']['tl_calendar_events']['gal_headline']       = array('Gallery headline', 'If you enter a headline, it will be shown on top of the gallery.');
+$GLOBALS['TL_LANG']['tl_calendar_events']['multiSRC']           = array('Source files', 'Please select one or more files or folders (files in a folder will be included automatically).');
+$GLOBALS['TL_LANG']['tl_calendar_events']['sortBy']             = array('Order by', 'Please select a sort order.');
+$GLOBALS['TL_LANG']['tl_calendar_events']['perRow']             = array('Thumbnails per row', 'Please enter the number of thumbnails per row.');
+$GLOBALS['TL_LANG']['tl_calendar_events']['gal_size']           = array('Image width and height', 'Please enter either the image width, the image height or both measures to resize the image. If you leave both fields blank, the original image size will be displayed.');
+$GLOBALS['TL_LANG']['tl_calendar_events']['gal_fullsize']       = array('Fullsize view', 'If you choose this option, the images can be viewed fullsize by clicking it.');
+$GLOBALS['TL_LANG']['tl_calendar_events']['gal_imagemargin']    = array('Image margin', 'Please enter the top, right, bottom and left margin and the unit. Image margin is the space inbetween an image and its neighbour elements.');
+$GLOBALS['TL_LANG']['tl_calendar_events']['meta_txt']           = array('Meta-Daten', 'Geben Sie die Bildbeschreibung entsprechend einer meta.txt ein.');
 
 /**
  * References
  */
-$GLOBALS['TL_LANG']['tl_calendar_events']['name_asc']  			= 'File name (ascending)';
-$GLOBALS['TL_LANG']['tl_calendar_events']['name_desc'] 			= 'File name (descending)';
-$GLOBALS['TL_LANG']['tl_calendar_events']['date_asc']  			= 'Date (ascending)';
-$GLOBALS['TL_LANG']['tl_calendar_events']['date_desc'] 			= 'Date (descending)';
-$GLOBALS['TL_LANG']['tl_calendar_events']['meta']      			= 'Meta file (meta.txt)';
+$GLOBALS['TL_LANG']['tl_calendar_events']['name_asc']           = 'File name (ascending)';
+$GLOBALS['TL_LANG']['tl_calendar_events']['name_desc']          = 'File name (descending)';
+$GLOBALS['TL_LANG']['tl_calendar_events']['date_asc']           = 'Date (ascending)';
+$GLOBALS['TL_LANG']['tl_calendar_events']['date_desc']          = 'Date (descending)';
+$GLOBALS['TL_LANG']['tl_calendar_events']['meta']               = 'Meta file (meta.txt)';
 
 
 /**
  * Legends
  */
-$GLOBALS['TL_LANG']['tl_calendar_events']['gallery_legend']		= 'Event gallery';
+$GLOBALS['TL_LANG']['tl_calendar_events']['gallery_legend']     = 'Event gallery';

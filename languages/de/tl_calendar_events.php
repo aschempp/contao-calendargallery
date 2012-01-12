@@ -31,27 +31,28 @@
 /**
  * Fields
  */
-$GLOBALS['TL_LANG']['tl_calendar_events']['addGallery']			= array('Eine Bildergalerie einfügen', 'Wenn Sie diese Option wählen, wird dem Event eine Bildergalerie hinzugefügt.');
-$GLOBALS['TL_LANG']['tl_calendar_events']['gal_headline']		= array('Galerie-Überschrift', 'Wenn Sie eine Überschrift eingeben, wird sie zu Beginn der Galerie angezeigt.');
-$GLOBALS['TL_LANG']['tl_calendar_events']['multiSRC']			= array('Quelldateien', 'Bitte wählen Sie alle Dateien und Ordner, welche in die Galerie eingefügt werden sollen. Wenn Sie einen Ordner auswählen, werden alle darin enthaltenen Dateien automatisch eingefügt.');
-$GLOBALS['TL_LANG']['tl_calendar_events']['sortBy']				= array('Sortieren nach', 'Bitte wählen Sie eine Sortierreihenfolge.');
-$GLOBALS['TL_LANG']['tl_calendar_events']['perRow']				= array('Vorschaubilder pro Reihe', 'Bitte legen Sie fest, wie viele Vorschaubilder pro Reihe angezeigt werden sollen.');
-$GLOBALS['TL_LANG']['tl_calendar_events']['gal_size']			= array('Bildbreite und Bildhöhe', 'Geben Sie entweder die Bildbreite, die Bildhöhe oder beide Werte ein, um die Bildgröße anzupassen. Wenn Sie keine Angaben machen, wird das Bild in seiner Originalgröße angezeigt.');
-$GLOBALS['TL_LANG']['tl_calendar_events']['gal_fullsize']		= array('Großansicht', 'Wenn Sie diese Option wählen, öffnet sich bei Anklicken der Bilder dessen Großansicht.');
-$GLOBALS['TL_LANG']['tl_calendar_events']['gal_imagemargin']	= array('Bildabstand', 'Bitte geben Sie den oberen, rechten, unteren und linken Bildabstand sowie die Einheit ein. Der Bildabstand ist der Abstand zwischen einem Bild und seinen benachbarten Elementen.');
+$GLOBALS['TL_LANG']['tl_calendar_events']['addGallery']         = array('Eine Bildergalerie einfügen', 'Wenn Sie diese Option wählen, wird dem Event eine Bildergalerie hinzugefügt.');
+$GLOBALS['TL_LANG']['tl_calendar_events']['gal_headline']       = array('Galerie-Überschrift', 'Wenn Sie eine Überschrift eingeben, wird sie zu Beginn der Galerie angezeigt.');
+$GLOBALS['TL_LANG']['tl_calendar_events']['multiSRC']           = array('Quelldateien', 'Bitte wählen Sie alle Dateien und Ordner, welche in die Galerie eingefügt werden sollen. Wenn Sie einen Ordner auswählen, werden alle darin enthaltenen Dateien automatisch eingefügt.');
+$GLOBALS['TL_LANG']['tl_calendar_events']['sortBy']             = array('Sortieren nach', 'Bitte wählen Sie eine Sortierreihenfolge.');
+$GLOBALS['TL_LANG']['tl_calendar_events']['perRow']             = array('Vorschaubilder pro Reihe', 'Bitte legen Sie fest, wie viele Vorschaubilder pro Reihe angezeigt werden sollen.');
+$GLOBALS['TL_LANG']['tl_calendar_events']['gal_size']           = array('Bildbreite und Bildhöhe', 'Geben Sie entweder die Bildbreite, die Bildhöhe oder beide Werte ein, um die Bildgröße anzupassen. Wenn Sie keine Angaben machen, wird das Bild in seiner Originalgröße angezeigt.');
+$GLOBALS['TL_LANG']['tl_calendar_events']['gal_fullsize']       = array('Großansicht', 'Wenn Sie diese Option wählen, öffnet sich bei Anklicken der Bilder dessen Großansicht.');
+$GLOBALS['TL_LANG']['tl_calendar_events']['gal_imagemargin']    = array('Bildabstand', 'Bitte geben Sie den oberen, rechten, unteren und linken Bildabstand sowie die Einheit ein. Der Bildabstand ist der Abstand zwischen einem Bild und seinen benachbarten Elementen.');
+$GLOBALS['TL_LANG']['tl_calendar_events']['meta_txt']           = array('Meta-Daten', 'Geben Sie die Bildbeschreibung entsprechend einer meta.txt ein.');
 
 
 /**
  * References
  */
-$GLOBALS['TL_LANG']['tl_calendar_events']['name_asc']  			= 'Dateiname (aufsteigend)';
-$GLOBALS['TL_LANG']['tl_calendar_events']['name_desc'] 			= 'Dateiname (absteigend)';
-$GLOBALS['TL_LANG']['tl_calendar_events']['date_asc']  			= 'Datum (aufsteigend)';
-$GLOBALS['TL_LANG']['tl_calendar_events']['date_desc'] 			= 'Datum (absteigend)';
-$GLOBALS['TL_LANG']['tl_calendar_events']['meta']      			= 'Meta Datei (meta.txt)';
+$GLOBALS['TL_LANG']['tl_calendar_events']['name_asc']           = 'Dateiname (aufsteigend)';
+$GLOBALS['TL_LANG']['tl_calendar_events']['name_desc']          = 'Dateiname (absteigend)';
+$GLOBALS['TL_LANG']['tl_calendar_events']['date_asc']           = 'Datum (aufsteigend)';
+$GLOBALS['TL_LANG']['tl_calendar_events']['date_desc']          = 'Datum (absteigend)';
+$GLOBALS['TL_LANG']['tl_calendar_events']['meta']               = 'Meta Datei (meta.txt)';
 
 
 /**
  * Legends
  */
-$GLOBALS['TL_LANG']['tl_calendar_events']['gallery_legend']		= 'Event-Galerie';
+$GLOBALS['TL_LANG']['tl_calendar_events']['gallery_legend']     = 'Event-Galerie';
