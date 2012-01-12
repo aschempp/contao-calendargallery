@@ -22,4 +22,6 @@ CREATE TABLE `tl_calendar_events` (
   `gal_headline` varchar(255) NOT NULL default '',
   `gal_perPage` smallint(5) unsigned NOT NULL default '0',
   `gal_numberOfItems` smallint(5) unsigned NOT NULL default '0',
+  `meta_txt` text NULL,
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+

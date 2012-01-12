@@ -28,26 +28,31 @@
  */
 
 
-class CalendarGallery extends ContentGallery
+// Support for metagallery extension
+$strParent = in_array('metagallery', $this->Config->getActiveModules()) ? 'ContentMetaGallery' : 'ContentGallery';
+
+eval('
+class CalendarGallery extends ' . $strParent . '
 {
+
 	public function __construct($objTemplate)
 	{
-		$this->import('Config');
-		$this->import('Input');
-		$this->import('Environment');
-		$this->import('Session');
-		$this->import('Database');
+		$this->import(\'Config\');
+		$this->import(\'Input\');
+		$this->import(\'Environment\');
+		$this->import(\'Session\');
+		$this->import(\'Database\');
 
 		// Default values (not available in calendar gallery)
 		$this->useHomeDir = false;
 		$this->perPage = 0;
 		$this->id = $objTemplate->id;
-		$this->type = 'calendar_gallery';
+		$this->type = \'calendar_gallery\';
 
 		// Apply calendar gallery settings
 		$arrHeadline = deserialize($objTemplate->gal_headline);
-		$this->headline = is_array($arrHeadline) ? $arrHeadline['value'] : $arrHeadline;
-		$this->hl = is_array($arrHeadline) ? $arrHeadline['unit'] : 'h1';
+		$this->headline = is_array($arrHeadline) ? $arrHeadline[\'value\'] : $arrHeadline;
+		$this->hl = is_array($arrHeadline) ? $arrHeadline[\'unit\'] : \'h1\';
 		$this->multiSRC = $objTemplate->multiSRC;
 		$this->sortBy = $objTemplate->sortBy;
 		$this->perRow = $objTemplate->perRow;
@@ -56,6 +61,7 @@ class CalendarGallery extends ContentGallery
 		$this->fullsize = $objTemplate->gal_fullsize;
 		$this->numberOfItems = $objTemplate->gal_numberOfItems;
 		$this->perPage = $objTemplate->gal_perPage;
+		$this->meta_txt = $objTemplate->meta_txt;
 	}
-}
+}');
 

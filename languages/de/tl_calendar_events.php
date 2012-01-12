@@ -39,6 +39,7 @@ $GLOBALS['TL_LANG']['tl_calendar_events']['perRow']				= array('Vorschaubilder p
 $GLOBALS['TL_LANG']['tl_calendar_events']['gal_size']			= array('Bildbreite und Bildhöhe', 'Geben Sie entweder die Bildbreite, die Bildhöhe oder beide Werte ein, um die Bildgröße anzupassen. Wenn Sie keine Angaben machen, wird das Bild in seiner Originalgröße angezeigt.');
 $GLOBALS['TL_LANG']['tl_calendar_events']['gal_fullsize']		= array('Großansicht', 'Wenn Sie diese Option wählen, öffnet sich bei Anklicken der Bilder dessen Großansicht.');
 $GLOBALS['TL_LANG']['tl_calendar_events']['gal_imagemargin']	= array('Bildabstand', 'Bitte geben Sie den oberen, rechten, unteren und linken Bildabstand sowie die Einheit ein. Der Bildabstand ist der Abstand zwischen einem Bild und seinen benachbarten Elementen.');
+$GLOBALS['TL_LANG']['tl_calendar_events']['meta_txt']			= array('Meta-Daten', 'Geben Sie die Bildbeschreibung entsprechend einer meta.txt ein.');
 
 
 /**
