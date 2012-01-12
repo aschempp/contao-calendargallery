@@ -39,6 +39,7 @@ $GLOBALS['TL_LANG']['tl_calendar_events']['perRow']             = array('Thumbna
 $GLOBALS['TL_LANG']['tl_calendar_events']['gal_size']           = array('Image width and height', 'Please enter either the image width, the image height or both measures to resize the image. If you leave both fields blank, the original image size will be displayed.');
 $GLOBALS['TL_LANG']['tl_calendar_events']['gal_fullsize']       = array('Fullsize view', 'If you choose this option, the images can be viewed fullsize by clicking it.');
 $GLOBALS['TL_LANG']['tl_calendar_events']['gal_imagemargin']    = array('Image margin', 'Please enter the top, right, bottom and left margin and the unit. Image margin is the space inbetween an image and its neighbour elements.');
+$GLOBALS['TL_LANG']['tl_calendar_events']['meta_txt']           = array('Meta-Daten', 'Please enter an image description in the format of a meta.txt.');
 
 /**
  * References
