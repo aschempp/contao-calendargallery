@@ -38,11 +38,11 @@ $GLOBALS['TL_DCA']['tl_calendar_events']['list']['sorting']['child_record_callba
 /**
  * Palettes
  */
-$GLOBALS['TL_DCA']['tl_calendar_events']['palettes']['__selector__'][]		= 'addGallery';
 $GLOBALS['TL_DCA']['tl_calendar_events']['subpalettes']['addGallery']		= 'gal_headline,multiSRC,gal_size,gal_imagemargin,perRow,sortBy,gal_fullsize';
+$GLOBALS['TL_DCA']['tl_calendar_events']['palettes']['__selector__'][] = 'addGallery';
 foreach($GLOBALS['TL_DCA']['tl_calendar_events']['palettes'] as $k => $v)
 {
-	$GLOBALS['TL_DCA']['tl_calendar_events']['palettes'][$k] = str_replace('addImage;', 'addImage;{gallery_legend:hide},addGallery;', $GLOBALS['TL_DCA']['tl_calendar_events']['palettes'][$k]);
+    $GLOBALS['TL_DCA']['tl_calendar_events']['palettes'][$k] = str_replace('addImage;', 'addImage;{gallery_legend:hide},addGallery;', $GLOBALS['TL_DCA']['tl_calendar_events']['palettes'][$k]);
 }
 
 
@@ -51,102 +51,100 @@ foreach($GLOBALS['TL_DCA']['tl_calendar_events']['palettes'] as $k => $v)
  */
 $GLOBALS['TL_DCA']['tl_calendar_events']['fields']['addGallery'] = array
 (
-	'label'                   => &$GLOBALS['TL_LANG']['tl_calendar_events']['addGallery'],
-	'exclude'                 => true,
-	'filter'                  => true,
-	'inputType'               => 'checkbox',
-	'eval'                    => array('submitOnChange'=>true)
+    'label'                   => &$GLOBALS['TL_LANG']['tl_calendar_events']['addGallery'],
+    'exclude'                 => true,
+    'filter'                  => true,
+    'inputType'               => 'checkbox',
+    'eval'                    => array('submitOnChange'=>true)
 );
 
 $GLOBALS['TL_DCA']['tl_calendar_events']['fields']['gal_headline'] = array
 (
-	'label'                   => &$GLOBALS['TL_LANG']['tl_calendar_events']['gal_headline'],
-	'exclude'                 => true,
-	'inputType'               => 'inputUnit',
-	'options'                 => array('h1', 'h2', 'h3', 'h4', 'h5', 'h6'),
-	'eval'                    => array('maxlength'=>255),
+    'label'                   => &$GLOBALS['TL_LANG']['tl_calendar_events']['gal_headline'],
+    'exclude'                 => true,
+    'inputType'               => 'inputUnit',
+    'options'                 => array('h1', 'h2', 'h3', 'h4', 'h5', 'h6'),
+    'eval'                    => array('maxlength'=>255),
 );
 
 $GLOBALS['TL_DCA']['tl_calendar_events']['fields']['multiSRC'] = array
 (
-	'label'                   => &$GLOBALS['TL_LANG']['tl_calendar_events']['multiSRC'],
-	'exclude'                 => true,
-	'inputType'               => 'fileTree',
-	'eval'                    => array('fieldType'=>'checkbox', 'files'=>true, 'mandatory'=>true),
+    'label'                   => &$GLOBALS['TL_LANG']['tl_calendar_events']['multiSRC'],
+    'exclude'                 => true,
+    'inputType'               => 'fileTree',
+    'eval'                    => array('fieldType'=>'checkbox', 'files'=>true, 'mandatory'=>true),
 );
 
 $GLOBALS['TL_DCA']['tl_calendar_events']['fields']['perRow'] = array
 (
-	'label'                   => &$GLOBALS['TL_LANG']['tl_calendar_events']['perRow'],
-	'default'                 => 4,
-	'exclude'                 => true,
-	'inputType'               => 'select',
-	'options'                 => array(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12),
-	'eval'                    => array('tl_class'=>'w50'),
+    'label'                   => &$GLOBALS['TL_LANG']['tl_calendar_events']['perRow'],
+    'default'                 => 4,
+    'exclude'                 => true,
+    'inputType'               => 'select',
+    'options'                 => array(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12),
+    'eval'                    => array('tl_class'=>'w50'),
 );
 
 $GLOBALS['TL_DCA']['tl_calendar_events']['fields']['sortBy'] = array
 (
-	'label'                   => &$GLOBALS['TL_LANG']['tl_calendar_events']['sortBy'],
-	'exclude'                 => true,
-	'inputType'               => 'select',
-	'options'                 => array('name_asc', 'name_desc', 'date_asc', 'date_desc', 'meta'),
-	'reference'               => &$GLOBALS['TL_LANG']['tl_calendar_events'],
-	'eval'                    => array('tl_class'=>'w50'),
+    'label'                   => &$GLOBALS['TL_LANG']['tl_calendar_events']['sortBy'],
+    'exclude'                 => true,
+    'inputType'               => 'select',
+    'options'                 => array('name_asc', 'name_desc', 'date_asc', 'date_desc', 'meta'),
+    'reference'               => &$GLOBALS['TL_LANG']['tl_calendar_events'],
+    'eval'                    => array('tl_class'=>'w50'),
 );
 
 $GLOBALS['TL_DCA']['tl_calendar_events']['fields']['gal_imagemargin'] = array
 (
-	'label'                   => &$GLOBALS['TL_LANG']['tl_calendar_events']['gal_imagemargin'],
-	'exclude'                 => true,
-	'inputType'               => 'trbl',
-	'options'                 => array('px', '%', 'em', 'pt', 'pc', 'in', 'cm', 'mm'),
-	'eval'                    => array('includeBlankOption'=>true, 'tl_class'=>'w50'),
+    'label'                   => &$GLOBALS['TL_LANG']['tl_calendar_events']['gal_imagemargin'],
+    'exclude'                 => true,
+    'inputType'               => 'trbl',
+    'options'                 => array('px', '%', 'em', 'pt', 'pc', 'in', 'cm', 'mm'),
+    'eval'                    => array('includeBlankOption'=>true, 'tl_class'=>'w50'),
 );
 
 $GLOBALS['TL_DCA']['tl_calendar_events']['fields']['gal_size'] = array
 (
-	'label'                   => &$GLOBALS['TL_LANG']['tl_calendar_events']['gal_size'],
-	'exclude'                 => true,
-	'inputType'               => 'text',
-	'eval'                    => array('multiple'=>true, 'size'=>2, 'rgxp'=>'digit', 'nospace'=>true, 'tl_class'=>'w50'),
+    'label'                   => &$GLOBALS['TL_LANG']['tl_calendar_events']['gal_size'],
+    'exclude'                 => true,
+    'inputType'               => 'text',
+    'eval'                    => array('multiple'=>true, 'size'=>2, 'rgxp'=>'digit', 'nospace'=>true, 'tl_class'=>'w50'),
 );
 
 $GLOBALS['TL_DCA']['tl_calendar_events']['fields']['gal_fullsize'] = array
 (
-	'label'                   => &$GLOBALS['TL_LANG']['tl_calendar_events']['gal_fullsize'],
-	'exclude'                 => true,
-	'inputType'               => 'checkbox',
-	'eval'                    => array('tl_class'=>'w50'),
+    'label'                   => &$GLOBALS['TL_LANG']['tl_calendar_events']['gal_fullsize'],
+    'exclude'                 => true,
+    'inputType'               => 'checkbox',
+    'eval'                    => array('tl_class'=>'w50'),
 );
 
 
 class tl_calendar_events_gallery extends Backend
 {
-	
-	public function listEvents($arrRow)
-	{
-		$key = $arrRow['published'] ? 'published' : 'unpublished';
-		$span = Calendar::calculateSpan($arrRow['startTime'], $arrRow['endTime']);
+    public function listEvents($arrRow)
+    {
+        $key = $arrRow['published'] ? 'published' : 'unpublished';
+        $span = Calendar::calculateSpan($arrRow['startTime'], $arrRow['endTime']);
 
-		if ($span > 0)
-		{
-			$date = $this->parseDate($GLOBALS['TL_CONFIG'][($arrRow['addTime'] ? 'datimFormat' : 'dateFormat')], $arrRow['startTime']) . ' - ' . $this->parseDate($GLOBALS['TL_CONFIG'][($arrRow['addTime'] ? 'datimFormat' : 'dateFormat')], $arrRow['endTime']);
-		}
-		elseif ($arrRow['startTime'] == $arrRow['endTime'])
-		{
-			$date = $this->parseDate($GLOBALS['TL_CONFIG']['dateFormat'], $arrRow['startTime']) . ($arrRow['addTime'] ? ' (' . $this->parseDate($GLOBALS['TL_CONFIG']['timeFormat'], $arrRow['startTime']) . ')' : '');
-		}
-		else
-		{
-			$date = $this->parseDate($GLOBALS['TL_CONFIG']['dateFormat'], $arrRow['startTime']) . ($arrRow['addTime'] ? ' (' . $this->parseDate($GLOBALS['TL_CONFIG']['timeFormat'], $arrRow['startTime']) . ' - ' . $this->parseDate($GLOBALS['TL_CONFIG']['timeFormat'], $arrRow['endTime']) . ')' : '');
-		}
+        if ($span > 0)
+        {
+            $date = $this->parseDate($GLOBALS['TL_CONFIG'][($arrRow['addTime'] ? 'datimFormat' : 'dateFormat')], $arrRow['startTime']) . ' - ' . $this->parseDate($GLOBALS['TL_CONFIG'][($arrRow['addTime'] ? 'datimFormat' : 'dateFormat')], $arrRow['endTime']);
+        }
+        elseif ($arrRow['startTime'] == $arrRow['endTime'])
+        {
+            $date = $this->parseDate($GLOBALS['TL_CONFIG']['dateFormat'], $arrRow['startTime']) . ($arrRow['addTime'] ? ' (' . $this->parseDate($GLOBALS['TL_CONFIG']['timeFormat'], $arrRow['startTime']) . ')' : '');
+        }
+        else
+        {
+            $date = $this->parseDate($GLOBALS['TL_CONFIG']['dateFormat'], $arrRow['startTime']) . ($arrRow['addTime'] ? ' (' . $this->parseDate($GLOBALS['TL_CONFIG']['timeFormat'], $arrRow['startTime']) . ' - ' . $this->parseDate($GLOBALS['TL_CONFIG']['timeFormat'], $arrRow['endTime']) . ')' : '');
+        }
 
-		return '
+        return '
 <div class="cte_type ' . $key . '"><strong>' . $arrRow['title'] . '</strong> - ' . $date . ($arrRow['addGallery'] ? ' <img src="system/modules/calendargallery/html/images.png" alt="" style="position:absolute; margin-left:10px" />' : '') . '</div>
 <div class="limit_height' . (!$GLOBALS['TL_CONFIG']['doNotCollapse'] ? ' h52' : '') . ' block">
 ' . $arrRow['details'] . '
 </div>' . "\n";
-	}
+    }
 }
-
