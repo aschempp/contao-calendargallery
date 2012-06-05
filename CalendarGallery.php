@@ -30,6 +30,12 @@ class CalendarGallery extends ContentGallery
 {
 	public function __construct($objTemplate) 
 	{
+		$this->import('Config');
+		$this->import('Input');
+		$this->import('Environment');
+		$this->import('Session');
+		$this->import('Database');
+		
 		// Default values (not available in calendar gallery)
 		$this->useHomeDir = false;
 		$this->perPage = 0;
@@ -46,6 +52,8 @@ class CalendarGallery extends ContentGallery
 		$this->imagemargin = $objTemplate->gal_imagemargin;
 		$this->size = $objTemplate->gal_size;
 		$this->fullsize = $objTemplate->gal_fullsize;
+		$this->numberOfItems = $objTemplate->numberOfItems;
+		$this->perPage = $objTemplate->perPage;
 	}
 }
 
