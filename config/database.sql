@@ -7,9 +7,9 @@
 -- *                                                        *
 -- **********************************************************
 
--- 
+--
 -- Table `tl_calendar_events`
--- 
+--
 
 CREATE TABLE `tl_calendar_events` (
   `addGallery` char(1) NOT NULL default '',
@@ -20,6 +20,6 @@ CREATE TABLE `tl_calendar_events` (
   `gal_imagemargin` varchar(255) NOT NULL default '',
   `gal_fullsize` char(1) NOT NULL default '',
   `gal_headline` varchar(255) NOT NULL default '',
-  `perPage` smallint(5) unsigned NOT NULL default '0',
-  `numberOfItems` smallint(5) unsigned NOT NULL default '0',
+  `gal_perPage` smallint(5) unsigned NOT NULL default '0',
+  `gal_numberOfItems` smallint(5) unsigned NOT NULL default '0',
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;

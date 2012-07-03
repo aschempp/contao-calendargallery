@@ -8,12 +8,12 @@
  * modify it under the terms of the GNU Lesser General Public
  * License as published by the Free Software Foundation, either
  * version 2.1 of the License, or (at your option) any later version.
- * 
+ *
  * This program is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
  * Lesser General Public License for more details.
- * 
+ *
  * You should have received a copy of the GNU Lesser General Public
  * License along with this program. If not, please visit the Free
  * Software Foundation website at http://www.gnu.org/licenses/.
@@ -36,7 +36,7 @@ $GLOBALS['TL_DCA']['tl_calendar_events']['list']['sorting']['child_record_callba
  * Palettes
  */
 $GLOBALS['TL_DCA']['tl_calendar_events']['palettes']['__selector__'][]		= 'addGallery';
-$GLOBALS['TL_DCA']['tl_calendar_events']['subpalettes']['addGallery']		= 'gal_headline,multiSRC,gal_size,gal_imagemargin,perRow,perPage,numberOfItems,sortBy,gal_fullsize';
+$GLOBALS['TL_DCA']['tl_calendar_events']['subpalettes']['addGallery']		= 'gal_headline,multiSRC,gal_size,gal_imagemargin,perRow,gal_perPage,gal_numberOfItems,sortBy,gal_fullsize';
 
 foreach($GLOBALS['TL_DCA']['tl_calendar_events']['palettes'] as $k => $v)
 {
@@ -120,7 +120,7 @@ $GLOBALS['TL_DCA']['tl_calendar_events']['fields']['gal_fullsize'] = array
 	'eval'                    => array('tl_class'=>'w50'),
 );
 
-$GLOBALS['TL_DCA']['tl_calendar_events']['fields']['perPage'] = array
+$GLOBALS['TL_DCA']['tl_calendar_events']['fields']['gal_perPage'] = array
 (
 	'label'                   => &$GLOBALS['TL_LANG']['tl_content']['perPage'],
 	'exclude'                 => true,
@@ -128,7 +128,7 @@ $GLOBALS['TL_DCA']['tl_calendar_events']['fields']['perPage'] = array
 	'eval'                    => array('rgxp'=>'digit', 'tl_class'=>'w50')
 );
 
-$GLOBALS['TL_DCA']['tl_calendar_events']['fields']['numberOfItems'] = array
+$GLOBALS['TL_DCA']['tl_calendar_events']['fields']['gal_numberOfItems'] = array
 (
 	'label'                   => &$GLOBALS['TL_LANG']['tl_content']['numberOfItems'],
 	'exclude'                 => true,
@@ -139,7 +139,7 @@ $GLOBALS['TL_DCA']['tl_calendar_events']['fields']['numberOfItems'] = array
 
 class tl_calendar_events_gallery extends Backend
 {
-	
+
 	public function listEvents($arrRow)
 	{
 		$key = $arrRow['published'] ? 'published' : 'unpublished';
