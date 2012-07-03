@@ -36,7 +36,8 @@ $GLOBALS['TL_DCA']['tl_calendar_events']['list']['sorting']['child_record_callba
  * Palettes
  */
 $GLOBALS['TL_DCA']['tl_calendar_events']['palettes']['__selector__'][]		= 'addGallery';
-$GLOBALS['TL_DCA']['tl_calendar_events']['subpalettes']['addGallery']		= 'gal_headline,multiSRC,gal_size,gal_imagemargin,perRow,sortBy,gal_fullsize';
+$GLOBALS['TL_DCA']['tl_calendar_events']['subpalettes']['addGallery']		= 'gal_headline,multiSRC,gal_size,gal_imagemargin,perRow,perPage,numberOfItems,sortBy,gal_fullsize';
+
 foreach($GLOBALS['TL_DCA']['tl_calendar_events']['palettes'] as $k => $v)
 {
 	$GLOBALS['TL_DCA']['tl_calendar_events']['palettes'][$k] = str_replace('addImage;', 'addImage;{gallery_legend:hide},addGallery;', $GLOBALS['TL_DCA']['tl_calendar_events']['palettes'][$k]);
@@ -105,8 +106,10 @@ $GLOBALS['TL_DCA']['tl_calendar_events']['fields']['gal_size'] = array
 (
 	'label'                   => &$GLOBALS['TL_LANG']['tl_calendar_events']['gal_size'],
 	'exclude'                 => true,
-	'inputType'               => 'text',
-	'eval'                    => array('multiple'=>true, 'size'=>2, 'rgxp'=>'digit', 'nospace'=>true, 'tl_class'=>'w50'),
+	'inputType'               => 'imageSize',
+	'options'                 => $GLOBALS['TL_CROP'],
+	'reference'               => &$GLOBALS['TL_LANG']['MSC'],
+	'eval'                    => array('rgxp'=>'digit', 'nospace'=>true, 'tl_class'=>'w50'),
 );
 
 $GLOBALS['TL_DCA']['tl_calendar_events']['fields']['gal_fullsize'] = array
@@ -115,6 +118,22 @@ $GLOBALS['TL_DCA']['tl_calendar_events']['fields']['gal_fullsize'] = array
 	'exclude'                 => true,
 	'inputType'               => 'checkbox',
 	'eval'                    => array('tl_class'=>'w50'),
+);
+
+$GLOBALS['TL_DCA']['tl_calendar_events']['fields']['perPage'] = array
+(
+	'label'                   => &$GLOBALS['TL_LANG']['tl_content']['perPage'],
+	'exclude'                 => true,
+	'inputType'               => 'text',
+	'eval'                    => array('rgxp'=>'digit', 'tl_class'=>'w50')
+);
+
+$GLOBALS['TL_DCA']['tl_calendar_events']['fields']['numberOfItems'] = array
+(
+	'label'                   => &$GLOBALS['TL_LANG']['tl_content']['numberOfItems'],
+	'exclude'                 => true,
+	'inputType'               => 'text',
+	'eval'                    => array('rgxp'=>'digit', 'tl_class'=>'w50')
 );
 
 
