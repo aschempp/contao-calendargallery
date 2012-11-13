@@ -1,11 +1,11 @@
 
-calendargallery
-===============
+Contao Extension "calendargallery"
+==================================
 
 
-Version 1.1.0 stable (2012-07-04) 
+Version 1.1.0 stable (2012-11-13) 
 ---------------------------------
-- Added templates for Contao 2.10
+- Added templates for Contao 2.10/2.11
 - Additional image-size options added
 - Changelog and Readme created
 
